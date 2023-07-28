@@ -17,6 +17,8 @@ def init_model_args(model_args = None):
 
 def do_chat_stream(model, tokenizer, question, history, model_args = None):
     model_args = init_model_args(model_args)
+    print(model_args)
+    
     sends = 0
     for response, _ in model.stream_chat(
             tokenizer, question, history,

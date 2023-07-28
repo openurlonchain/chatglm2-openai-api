@@ -17,7 +17,7 @@ def main():
     parser.add_argument('--config', type=str, help='Path to the config file',
                         default='config.toml')
     parser.add_argument('--llm_model', type=str, help='Choosed LLM model',
-                        default='chatglm-6b-int4')
+                        default='chatglm2-6b')
     parser.add_argument('--embeddings_model', type=str,
                         help='Choosed embeddings model, can be empty',
                         default='')

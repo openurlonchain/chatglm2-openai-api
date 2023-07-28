@@ -32,9 +32,9 @@ class ChatBody(BaseModel):
     messages: List[Message]
     model: str
     stream: Optional[bool] = False
-    max_tokens: Optional[int]
-    temperature: Optional[float]
-    top_p: Optional[float]
+    max_tokens: Optional[int] = 2048
+    temperature: Optional[float] = 0.95
+    top_p: Optional[float] = 0.7
 
 
 class CompletionBody(BaseModel):
